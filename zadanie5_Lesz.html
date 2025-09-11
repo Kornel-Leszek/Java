@@ -3,19 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zadanie 5 - Leszek</title>
+  <title>Zadanie 5 - Układ 1</title>
   <script type="text/javascript">
-    function WinOpen_leszek1() {
-      window.open("grafika1.html","grafika1","width=300,height=250","toolbar=no,directories=no,menubar=no,height=380,width=160,top=500,left=400");
-    }
-    function WinOpen_leszek2() {
-      window.open("grafika2.html","grafika2","width=300,height=250","toolbar=no,directories=no,menubar=no,height=380,width=160,top=500,left=700");
-    }
-    function WinOpen_leszek3() {
-      window.open("grafika3.html","grafika3","width=300,height=250","toolbar=no,directories=no,menubar=no,height=380,width=160,top=500,left=1000");
-    }
-    function WinOpen_leszek4() {
-      window.open("grafika4.html","grafika4","width=300,height=250","toolbar=no,directories=no,menubar=no,height=380,width=160,top=500,left=1300");
+    function WinOpen_leszek(file, name, left) {
+      window.open(file, name, `width=300,height=250,toolbar=no,directories=no,menubar=no,top=500,left=${left}`);
     }
     function okno_zamknij_leszek() {
       window.close();
@@ -23,14 +14,14 @@
   </script>
 </head>
 <body>
-  <center><p style="color:red; font-size:2cm;">wykonał: Kornel Leszek mój numer w dzienniku 13, czyli mam układ [(13) mod 4=1] układ 1</p></center>
-<center>
-  <input type="button" value="grafika1" onclick="WinOpen_leszek1()">
-  <input type="button" value="grafika2" onclick="WinOpen_leszek2()">
-  <input type="button" value="grafika3" onclick="WinOpen_leszek3()">
-  <input type="button" value="grafika4" onclick="WinOpen_leszek4()">
-  <br><br>
-  <input type="button" value="zamknij okno" onclick="okno_zamknij_leszek()">
-</center>
+  <center>
+    <h1 style="color:red;">wykonał: Kornel Leszek, nr w dzienniku 13 → układ 1</h1>
+    <input type="button" value="grafika1" onclick="WinOpen_leszek('grafika1.html','grafika1',400)">
+    <input type="button" value="grafika2" onclick="WinOpen_leszek('grafika2.html','grafika2',700)">
+    <input type="button" value="grafika3" onclick="WinOpen_leszek('grafika3.html','grafika3',1000)">
+    <input type="button" value="grafika4" onclick="WinOpen_leszek('grafika4.html','grafika4',1300)">
+    <br><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_leszek()">
+  </center>
 </body>
 </html>
