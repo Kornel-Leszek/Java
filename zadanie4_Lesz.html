@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Pytania i odpowiedzi o JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      color: #cc0000;
+    }
+    .qa {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .question {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #003366;
+    }
+    .answer {
+      margin-left: 15px;
+    }
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pytania i odpowiedzi o JavaScript</h1>
+
+  <div class="qa">
+    <div class="question">1) Kiedy powstał JavaScript?</div>
+    <div class="answer">JavaScript powstał <b>w grudniu 1995 roku</b> (stworzony przez Brendana Eicha w firmie Netscape).</div>
+  </div>
+
+  <div class="qa">
+    <div class="question">2) Dlaczego jest to język skryptowy?</div>
+    <div class="answer">Ponieważ <b>nie wymaga wcześniejszej kompilacji</b> – działa interpretacyjnie, linia po linii.</div>
+  </div>
+
+  <div class="qa">
+    <div class="question">3) Gdzie jest wykonywany JavaScript (klient lub serwer)?</div>
+    <div class="answer">JS działa <b>po stronie klienta</b> (w przeglądarce), a obecnie także <b>po stronie serwera</b> (np. Node.js).</div>
+  </div>
+
+  <div class="qa">
+    <div class="question">4) Dlaczego JS to bezpieczne narzędzie?</div>
+    <div class="answer">Bo działa w <b>piaskownicy przeglądarki</b> – nie ma dostępu do plików systemowych ani sprzętu użytkownika.</div>
+  </div>
+
+  <div class="qa">
+    <div class="question">5) Czy jest to język obiektowy, jeśli tak to dlaczego?</div>
+    <div class="answer">Tak, ponieważ w JS wszystko można traktować jako <b>obiekt z właściwościami i metodami</b>.</div>
+  </div>
+
+  <div class="qa">
+    <div class="question">6) Wymień zalety JS:</div>
+    <div class="answer">
+      <ul>
+        <li>Działa w każdej przeglądarce, bez instalacji.</li>
+        <li>Umożliwia dynamiczne strony (animacje, formularze).</li>
+        <li>Ogromna liczba bibliotek i frameworków (React, Angular, Vue).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="qa">
+    <div class="question">7) Framework to:</div>
+    <div class="answer">Gotowy <b>szkielet aplikacji</b>, który ułatwia programowanie dzięki zestawowi narzędzi i reguł.</div>
+  </div>
+
+  <div class="qa">
+    <div class="question">8) Do aplikacji mobilnych można użyć Framework:</div>
+    <div class="answer">Tak, np. <b>React Native</b>, <b>Ionic</b>, <b>Flutter</b>.</div>
+  </div>
+
+  <div class="qa">
+    <div class="question">9) Aplikacje responsywne to:</div>
+    <div class="answer">Takie, które <b>dostosowują się do ekranu urządzenia</b> (komputer, tablet, smartfon).</div>
+  </div>
+
+  <div class="qa">
+    <div class="question">10) Kod:</div>
+    <div class="answer">
+      <code>&lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo;</code><br>
+      Tworzy przycisk z napisem <b>"Nowa Strona"</b>. Po kliknięciu wywoła funkcję <b>WinOpen(' ')</b>, która otworzy nowe okno.
+    </div>
+  </div>
+
+  <div class="qa">
+    <div class="question">11) Kod:</div>
+    <div class="answer">
+      <code>window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");</code><br>
+      Otwiera nowe okno z plikiem <b>obraz.html</b>. Ma ono wymiary 280x160 px, pozycję (200,200) oraz brak paska narzędzi i menu.
+    </div>
+  </div>
+
+  <div class="qa">
+    <div class="question">12) Opisz instrukcję window.close()</div>
+    <div class="answer">Instrukcja <b>zamyka bieżące okno</b> przeglądarki, w którym została wywołana (najczęściej takie otwarte przez <code>window.open()</code>).</div>
+  </div>
+
+</body>
+</html>
